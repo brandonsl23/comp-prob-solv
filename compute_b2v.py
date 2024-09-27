@@ -88,10 +88,6 @@ def compute_b2v(potential_func, T, r_min = 0.001, r_max = 5*sigma , points=1000)
     r_values = np.linspace(r_min, r_max, points)  
     integrand = []
     
-#4.938475e+25
-# B2V at 100K for Hard-Sphere: -0.000000e+00 m^3/mol but need to get #4.938475e+25
-# B2V at 100K for Square-Well: -1.172839e+31 m^3/mol
-# B2V at 100K for Lennard-Jones: -6.147197e+32 m^3/mol
 
     for r in r_values:
         u_r = potential_func(r)
@@ -169,5 +165,4 @@ df = pd.DataFrame({
 
 df.to_csv('homework-2-2/b2v_results.csv', index=False)
 
-#%%
-#Discussion 
+
