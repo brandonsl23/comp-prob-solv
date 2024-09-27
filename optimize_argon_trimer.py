@@ -14,9 +14,9 @@ def total_potential_trimer(vari, epsilon=0.01, sigma=3.4):
 
     Parameters:
     vari (list): A list containing three values [r12, x3, y3], where:
-        - r12 (float): Distance between atom 1 and atom 2.
-        - x3 (float): x-coordinate of atom 3.
-        - y3 (float): y-coordinate of atom 3.
+    r12 (float): Distance between atom 1 and atom 2.
+    x3 (float): x-coordinate of atom 3.
+    y3 (float): y-coordinate of atom 3.
     epsilon (float, optional): Depth of the potential well (default is 0.01 eV).
     sigma (float, optional): Distance at which the potential is zero (default is 3.4 Å).
 
